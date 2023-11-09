@@ -1,0 +1,22 @@
+{
+  "name": "pf-ruiznotari",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Javiier21/PF_JavierRuizNotari.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Javiier21/PF_JavierRuizNotari/issues"
+  },
+  "homepage": "https://github.com/Javiier21/PF_JavierRuizNotari#readme",
+  "description": "",
+  "dependencies": {
+    "toastify-js": "^1.12.0"
+  }
+}
