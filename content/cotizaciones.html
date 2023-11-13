@@ -62,7 +62,7 @@
           </div>
         </div>
 
-        <div class="row text-center">
+        <div class="row text-center" id="cotizacionesDestacadasContainer">
           <div class="col-md-4">
             <div class="card animate__animated animate__fadeIn">
               <div class="card-body">
@@ -100,70 +100,64 @@
             <div class="heading_container">
               <h2 class="text-center mb-5">Información de Cotizaciones</h2>
             </div>
-
+        
             <div class="accordion" id="accordionExample">
+              <!-- Categoría: Cryptomonedas Principales -->
               <div class="card">
-                <div class="card-header" id="headingOne">
+                <div class="card-header" id="headingMainCryptos">
                   <h2 class="mb-0">
                     <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
-                      data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Cotizaciones de Criptomonedas
+                      data-target="#collapseMainCryptos" aria-expanded="true" aria-controls="collapseMainCryptos">
+                      Cryptomonedas Principales
                     </button>
                   </h2>
                 </div>
-
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                <div id="collapseMainCryptos" class="collapse show" aria-labelledby="headingMainCryptos"
                   data-parent="#accordionExample">
-                  <div class="card-body">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Bitcoin (BTC): $50,000</li>
-                      <li class="list-group-item">Ethereum (ETH): $2,500</li>
-                      <li class="list-group-item">Litecoin (LTC): $150</li>
-                    </ul>
+                  <div class="card-body" id="mainCryptosList">
+                    <!-- Aquí se generarán dinámicamente las cotizaciones de Cryptomonedas Principales -->
                   </div>
                 </div>
               </div>
+        
+              <!-- Categoría: Cryptomonedas de Inteligencia Artificial -->
               <div class="card">
-                <div class="card-header" id="headingTwo">
+                <div class="card-header" id="headingAICryptos">
                   <h2 class="mb-0">
                     <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
-                      data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Cotizaciones de Acciones
+                      data-target="#collapseAICryptos" aria-expanded="false" aria-controls="collapseAICryptos">
+                      Cryptomonedas de Inteligencia Artificial
                     </button>
                   </h2>
                 </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                  <div class="card-body">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Apple Inc. (AAPL): $150</li>
-                      <li class="list-group-item">Amazon.com Inc. (AMZN): $3,500</li>
-                      <li class="list-group-item">Microsoft Corporation (MSFT): $250</li>
-                    </ul>
+                <div id="collapseAICryptos" class="collapse" aria-labelledby="headingAICryptos" data-parent="#accordionExample">
+                  <div class="card-body" id="aiCryptosList">
+                    <!-- Aquí se generarán dinámicamente las cotizaciones de Cryptomonedas de Inteligencia Artificial -->
                   </div>
                 </div>
               </div>
+        
+              <!-- Categoría: Cryptomonedas de NFTs -->
               <div class="card">
-                <div class="card-header" id="headingThree">
+                <div class="card-header" id="headingNFTCryptos">
                   <h2 class="mb-0">
                     <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
-                      data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Cotizaciones de Materias Primas
+                      data-target="#collapseNFTCryptos" aria-expanded="false" aria-controls="collapseNFTCryptos">
+                      Cryptomonedas de NFTs
                     </button>
                   </h2>
                 </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                  <div class="card-body">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Oro (XAU): $1,800</li>
-                      <li class="list-group-item">Petróleo Crudo (WTI): $70</li>
-                      <li class="list-group-item">Plata (XAG): $25</li>
-                    </ul>
+                <div id="collapseNFTCryptos" class="collapse" aria-labelledby="headingNFTCryptos"
+                  data-parent="#accordionExample">
+                  <div class="card-body" id="nftCryptosList">
+                    <!-- Aquí se generarán dinámicamente las cotizaciones de Cryptomonedas de NFTs -->
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        
       </div>
     </section>
 
@@ -275,6 +269,8 @@
     crossorigin="anonymous"></script>
   <!-- At the end of <body>, after jQuery and the Bootstrap js (Better nav bootstrap)-->
   <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
+  <script src="../js/funciones.js"></script>
+  <script src="../js/cotizaciones.js"></script>
 </body>
 
 </html>
